@@ -18,14 +18,14 @@ CXX_FLAGS = {
    "Darwin": ["-std=c++11", "-march=native", "-ftree-vectorize", "-DNDEBUG",
               "-Wno-sign-compare", "-fPIC", "-flto"],
    "Linux": ["-fopenmp", "-std=c++11", "-march=native", "-ftree-vectorize",
-             "-DNDEBUG", "-Wno-sign-compare", "-fPIC", "-flto"],
+             "-DNDEBUG", "-Wno-sign-compare", "-fPIC"],
    "Windows": ["/openmp", "/std:c++latest", "/arch:AVX2", "/DNDEBUG", "/LTCG",
                "/GL"]
 }
 
 LD_FLAGS = {
     "Darwin": ["-fPIC", "-flto"],
-    "Linux": ["-fPIC", "-flto"],
+    "Linux": ["-fPIC"],
     "Windows": ["/LTCG", "/GL"]
 }
 
